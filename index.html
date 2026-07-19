@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Music Player - Circular Playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="glass-card">
+        <h1>
+            <i class="fas fa-headphones-alt"></i> Music Player
+            <span class="sub"><i class="fas fa-code-branch"></i> circular doubly</span>
+        </h1>
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <div class="now-playing" id="currentSongDisplay">⏸ No song playing</div>
+            <div class="control-buttons">
+                <button class="btn btn-outline" id="prevBtn"><i class="fas fa-backward"></i> Prev</button>
+                <button class="btn btn-primary" id="playBtn"><i class="fas fa-play"></i> Play</button>
+                <button class="btn btn-outline" id="nextBtn"><i class="fas fa-forward"></i> Next</button>
+                <button class="btn btn-outline" id="shuffleBtn"><i class="fas fa-random"></i> Shuffle</button>
+                <button class="btn btn-outline" id="repeatBtn"><i class="fas fa-repeat"></i> Repeat</button>
+            </div>
+            <div class="keyboard-hint">
+                <kbd>Alt</kbd> + <kbd>←</kbd> Prev · 
+                <kbd>Alt</kbd> + <kbd>→</kbd> Next · 
+                <kbd>Alt</kbd> + <kbd>S</kbd> Shuffle · 
+                <kbd>Alt</kbd> + <kbd>R</kbd> Repeat
+            </div>
+        </div>
+
+        <!-- Input section -->
+        <div class="input-area">
+            <input type="text" id="songInput" placeholder="Add a song title..." />
+            <div class="btn-group">
+                <button class="btn btn-primary" id="addSongBtn"><i class="fas fa-plus-circle"></i> Add</button>
+                <button class="btn btn-outline" id="insertAfterBtn"><i class="fas fa-arrow-right"></i> After</button>
+                <button class="btn btn-outline" id="insertBeforeBtn"><i class="fas fa-arrow-left"></i> Before</button>
+            </div>
+        </div>
+
+        <!-- Playlist header -->
+        <div class="playlist-header">
+            <span><i class="fas fa-list-ul"></i> Playlist</span>
+            <span id="trackCount">0 songs</span>
+        </div>
+
+        <!-- Playlist container -->
+        <div class="list-container" id="playlistContainer">
+            <div class="empty-message">
+                <i class="fas fa-music"></i><br />
+                no tracks yet · add a song
+            </div>
+        </div>
+
+        <!-- Footer controls -->
+        <div class="footer-bar">
+            <div>
+                <button class="btn btn-danger" id="deleteCurrentBtn"><i class="fas fa-trash-alt"></i> Delete current</button>
+                <button class="btn btn-outline" id="clearAllBtn"><i class="fas fa-eraser"></i> Clear</button>
+            </div>
+            <div>
+                <span class="badge-circle" id="currentTrackBadge">⚡ 0/0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/CircularDoublyLinkedList.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
