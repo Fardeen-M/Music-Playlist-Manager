@@ -7,18 +7,18 @@ A Java-based Music Playlist Manager that uses a Circular Doubly Linked List to e
 
 | Field | Detail |
 |-------|--------|
-| Register Number | 711524BEE009 |
+| Register Number | 711524BEE016 |
 | Student Name | Fardeen M |
 | Project Title | Music Playlist Manager |
 | Domain | Data Structures using Circular Doubly Linked List |
-| Language | Java |
+| Language | JavaScript |
 | Core Concepts | Circular Doubly Linked List, Object-Oriented Programming (OOP), Java Collections Framework |
 
 
 
 📖 Overview
 
-The Music Playlist Manager is a Java application that manages a collection of songs using a Circular Doubly Linked List. It allows users to add songs, delete songs, search for songs, display the playlist, and navigate through songs in both forward and backward directions.
+The Music Playlist Manager is a JavaScript application that manages a collection of songs using a Circular Doubly Linked List. It allows users to add songs, delete songs, search for songs, display the playlist, and navigate through songs in both forward and backward directions.
 
 This project demonstrates the implementation of Data Structures and Object-Oriented Programming (OOP) concepts in Java.
 
@@ -178,10 +178,10 @@ Operations
 
 💻 Technologies Used
 
-- Java
+- JavaScript
 - VS Code
-- Git
-- GitHub
+- Html
+- Css
 - Java Collections Framework
 - Object-Oriented Programming (OOP)
 
@@ -202,22 +202,15 @@ java MainApplication
 
 📂 Project Structure
 
-Music-Playlist-Manager/
-
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── musicplaylist/
-│                   ├── MainApplication.java
-│                   ├── Song.java
-│                   ├── Node.java
-│                   └── CircularDoublyLinkedList.java
-│
-├── docs/
-│   ├── Flowchart.png
-│   └── Screenshots/
-│
+MUSIC-PLAYLIST-MANAGER/
+├── .vscode/
+│   └── launch.json
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   └── CircularDoublyLinkedList.js
+├── index.html
 └── README.md
 
 🏆 Features
